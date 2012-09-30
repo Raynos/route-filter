@@ -8,7 +8,6 @@ A filter function that acts as a router
 var HttpStream = require("http-stream")
     , chain = require("chain-stream")
     , sendJson = require("send-data").json
-
     , Router = require("route-filter")
 
     , server = chain(HttpStream().listen(8080))
