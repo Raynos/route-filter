@@ -28,10 +28,31 @@ server
     })
 
 server
+    // only accept GET methods to /get
+    .filter(route("/get", "GET"))
+    .forEach(function (dup) {
+        dup.end("get")
+    })
+
+server
+    .filter(route("/post", "POST"))
+    .forEach(function (dup) {
+        dup.end("post")
+    })
+
+server
     .filter(route.notFound)
     .forEach(function (dup) {
         dup.end("404")
     })
+
+server
+    .filter(route.invalidMethod)
+    .forEach(function (dup) {
+        // called when you make a DELETE to /get
+        dup.end("invalid method")
+    })
+
 ```
 
 ## Installation

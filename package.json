@@ -17,7 +17,9 @@
     "email": "raynos2@gmail.com"
   },
   "dependencies": {
-    "mapleTree": "~0.4.0"
+    "mapleTree": "~0.4.0",
+    "to-array": "~0.1.2",
+    "methods": "0.0.1"
   },
   "devDependencies": {
     "tap": "~0.3.1",
