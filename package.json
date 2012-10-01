@@ -1,6 +1,6 @@
 {
   "name": "route-filter",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A filter function that acts as a router",
   "keywords": [],
   "author": "Raynos <raynos2@gmail.com>",
